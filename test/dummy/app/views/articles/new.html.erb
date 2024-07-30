@@ -1,0 +1,5 @@
+<h1> New Article </div>
+<%= link_to "Back", articles_path %>
+<%= turbo_frame_tag @article do %>
+  <%= render "articles/form", article: @article %>
+<% end %>
