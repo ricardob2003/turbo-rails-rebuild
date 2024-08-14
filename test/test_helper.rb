@@ -25,3 +25,7 @@ end
 class ActionDispatch::IntegrationTest
   include ActionViewTestCaseExtensions
 end
+
+class ActionCable::Channel::TestCase
+  include ActionViewTestCaseExtensions
+end

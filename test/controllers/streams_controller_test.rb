@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TurboClone::StreamsHelperTest < ActionDispatch::IntegrationTest
+class TurboClone::StreamsControllerTest < ActionDispatch::IntegrationTest
   test 'create with respond to' do
     post articles_path, params: { article: { content: 'something' } }
     assert_redirected_to articles_path
